@@ -4,11 +4,11 @@ This project was a coursework assignment from my Operating Systems class to demo
 
 To build and run:
 ```bash
-make                            # Compile the kernel module
-sudo insmod process_info_lkm.ko inp_pid=1000   # Insert the module with PID threshold
-dmesg | tail                    # View the kernel log output
-sudo rmmod process_info_lkm     # Remove the module
-'''
+make                                              # Compile the kernel module
+sudo insmod process_info_lkm.ko inp_pid=1000      # Insert the module with PID threshold
+dmesg | tail                                      # View the kernel log output
+sudo rmmod process_info_lkm                       # Remove the module
+```
 
 
 ## Technologies Used
@@ -16,9 +16,3 @@ sudo rmmod process_info_lkm     # Remove the module
 - **C** – Low-level programming
 - **Linux Kernel API** – Process traversal and module interfaces
 - **Makefile** – Compiles module using `make`
-
-## Usage
-
-### Build the module:
-```bash
-make
